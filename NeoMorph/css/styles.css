@@ -1,0 +1,107 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ecf0f3;
+}
+
+.main-container {
+  display: flex;
+  gap: 50px;
+}
+
+.main-container .box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container .box .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #808080;
+}
+
+.text {
+  transition: border-radius 5000ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    box-shadow 5000ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    background-color 5000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.drop-shadow {
+  width: 1280px;
+  height: 720px;
+  border-radius: 22px;
+}
+
+.drop-shadow .text:hover {
+  color: rgb(0, 255, 255, 0);
+  width: 1280px;
+  height: 720px;
+  border-radius: 22px;
+  box-shadow: 18px 18px 20px #d1d9e6, -13px -13px 20px #ffffff;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.text2 {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(128, 128, 128, 0);
+  transition: all;
+}
+
+.text:hover .text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(128, 128, 128, 1);
+}
+
+/* 
+.inner-shadow {
+  width: 200px;
+  height: 200px;
+  border-radius: 22px;
+  box-shadow: inset 18px 18px 20px #d1d9e6, inset -18px -18px 20px #ffffff;
+} */
+
+/* .c-inner-shadow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: inset 18px 18px 20px #d1d9e6, inset -8px -8px 20px #ffffff;
+}
+
+.c-inner-shadow .circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 18px 18px 20px #d1d9e6, inset -8px -8px 20px #ffffff;
+} */
